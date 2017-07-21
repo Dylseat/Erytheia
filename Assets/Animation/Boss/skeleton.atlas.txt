@@ -1,0 +1,104 @@
+
+skeleton.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Crystal
+  rotate: false
+  xy: 567, 264
+  size: 106, 115
+  orig: 106, 115
+  offset: 0, 0
+  index: -1
+Flower
+  rotate: false
+  xy: 2, 176
+  size: 332, 310
+  orig: 332, 310
+  offset: 0, 0
+  index: -1
+Head
+  rotate: false
+  xy: 2, 2
+  size: 161, 172
+  orig: 161, 172
+  offset: 0, 0
+  index: -1
+L_leg
+  rotate: true
+  xy: 804, 388
+  size: 98, 123
+  orig: 98, 123
+  offset: 0, 0
+  index: -1
+P_1
+  rotate: false
+  xy: 336, 379
+  size: 215, 107
+  orig: 215, 107
+  offset: 0, 0
+  index: -1
+P_2_L
+  rotate: false
+  xy: 336, 264
+  size: 126, 113
+  orig: 126, 113
+  offset: 0, 0
+  index: -1
+P_2_M
+  rotate: false
+  xy: 464, 258
+  size: 101, 119
+  orig: 101, 119
+  offset: 0, 0
+  index: -1
+P_2_R
+  rotate: true
+  xy: 929, 385
+  size: 101, 91
+  orig: 101, 91
+  offset: 0, 0
+  index: -1
+P_3_L1
+  rotate: true
+  xy: 336, 176
+  size: 86, 75
+  orig: 86, 75
+  offset: 0, 0
+  index: -1
+P_3_L2
+  rotate: false
+  xy: 165, 14
+  size: 106, 160
+  orig: 106, 160
+  offset: 0, 0
+  index: -1
+P_3_M
+  rotate: true
+  xy: 678, 388
+  size: 98, 124
+  orig: 98, 124
+  offset: 0, 0
+  index: -1
+P_3_R1
+  rotate: false
+  xy: 344, 91
+  size: 82, 83
+  orig: 82, 83
+  offset: 0, 0
+  index: -1
+P_3_R2
+  rotate: false
+  xy: 553, 381
+  size: 123, 105
+  orig: 123, 105
+  offset: 0, 0
+  index: -1
+R_leg
+  rotate: false
+  xy: 273, 29
+  size: 69, 145
+  orig: 69, 145
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,316 @@
+{
+"skeleton": { "hash": "TndatlH1cNw5aJ9snExdOdhWPa8", "spine": "3.6.37", "width": 843, "height": 1375.31, "images": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "body", "parent": "root", "length": 289.17, "rotation": -106.01, "x": 45.67, "y": 87.48 },
+	{ "name": "head", "parent": "body", "length": 264.79, "rotation": -158.23, "x": -60.06, "y": -27.29 },
+	{ "name": "hat", "parent": "head", "length": 138.11, "rotation": 51.38, "x": 308.85, "y": 51.43 },
+	{ "name": "shoot_bottom", "parent": "hat", "length": 182.99, "rotation": -44.94, "x": 38.92, "y": -135.99 },
+	{ "name": "shoot_top", "parent": "shoot_bottom", "length": 247.87, "rotation": -35.77, "x": 180.12, "y": -1.85 },
+	{ "name": "petals_shoot", "parent": "shoot_top", "length": 246.55, "rotation": -67, "x": 242.47, "y": 0.28 },
+	{ "name": "tail", "parent": "body", "length": 131.88, "rotation": -115.27, "x": 237.17, "y": -107.96 }
+],
+"slots": [
+	{ "name": "PERSO PRINCIPAL_body", "bone": "body", "attachment": "PERSO PRINCIPAL_body" },
+	{ "name": "Head", "bone": "head", "attachment": "PERSO PRINCIPAL_head" },
+	{ "name": "Shoot_bottom", "bone": "shoot_bottom", "attachment": "PERSO PRINCIPAL_shoot_bottom" },
+	{ "name": "Shoot_top", "bone": "shoot_top", "attachment": "PERSO PRINCIPAL_shoot_top" },
+	{ "name": "hat", "bone": "hat", "attachment": "PERSO PRINCIPAL_hat" },
+	{ "name": "Tail", "bone": "tail", "attachment": "PERSO PRINCIPAL_tail_down" },
+	{ "name": "Petals_shoot", "bone": "petals_shoot", "attachment": "PERSO PRINCIPAL_petals_shot" }
+],
+"skins": {
+	"default": {
+		"Head": {
+			"PERSO PRINCIPAL_head": { "x": 187.67, "y": 17.25, "rotation": -95.76, "width": 431, "height": 435 }
+		},
+		"PERSO PRINCIPAL_body": {
+			"PERSO PRINCIPAL_body": { "x": 165.9, "y": 4.09, "rotation": 106.01, "width": 526, "height": 495 }
+		},
+		"Petals_shoot": {
+			"PERSO PRINCIPAL_petals_shot": { "x": 214.15, "y": -1.09, "rotation": -3.64, "width": 124, "height": 129 }
+		},
+		"Shoot_bottom": {
+			"PERSO PRINCIPAL_shoot_bottom": { "x": 115.65, "y": -30.21, "rotation": -102.2, "width": 282, "height": 275 }
+		},
+		"Shoot_top": {
+			"PERSO PRINCIPAL_shoot_top": { "x": 180.49, "y": -63.2, "rotation": -66.43, "width": 522, "height": 290 }
+		},
+		"Tail": {
+			"PERSO PRINCIPAL_tail_down": { "x": 126.36, "y": 18.85, "rotation": -138.72, "width": 124, "height": 106 },
+			"PERSO PRINCIPAL_tail_up": { "x": 123.95, "y": -26.76, "rotation": -138.72, "width": 146, "height": 185 }
+		},
+		"hat": {
+			"PERSO PRINCIPAL_hat": { "x": -84.48, "y": 45.7, "rotation": -147.14, "width": 843, "height": 543 }
+		}
+	}
+},
+"animations": {
+	"Idle": {
+		"slots": {
+			"Petals_shoot": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "PERSO PRINCIPAL_petals_shot" }
+				]
+			}
+		},
+		"bones": {
+			"body": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1, "angle": 0, "curve": "stepped" },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.5, "x": 0, "y": 29.52 },
+					{ "time": 1, "x": 0, "y": 0 },
+					{ "time": 1.5, "x": 0, "y": -30.48 },
+					{ "time": 2, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			},
+			"hat": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 2, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 },
+					{ "time": 1, "x": 1, "y": 0.95 },
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			},
+			"shoot_bottom": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"shoot_top": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1, "angle": -9.53 },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 2, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			}
+		}
+	},
+	"movement": {
+		"slots": {
+			"Petals_shoot": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "PERSO PRINCIPAL_petals_shot" }
+				]
+			},
+			"Tail": {
+				"attachment": [
+					{ "time": 0, "name": "PERSO PRINCIPAL_tail_down" },
+					{ "time": 0.3333, "name": "PERSO PRINCIPAL_tail_up" },
+					{ "time": 0.6667, "name": "PERSO PRINCIPAL_tail_down" },
+					{ "time": 1, "name": "PERSO PRINCIPAL_tail_up" },
+					{ "time": 1.3333, "name": "PERSO PRINCIPAL_tail_down" },
+					{ "time": 1.6667, "name": "PERSO PRINCIPAL_tail_up" },
+					{ "time": 2, "name": "PERSO PRINCIPAL_tail_up" }
+				]
+			}
+		},
+		"bones": {
+			"body": {
+				"rotate": [
+					{ "time": 0, "angle": -11.12 },
+					{ "time": 0.5, "angle": -11.12, "curve": "stepped" },
+					{ "time": 1, "angle": -11.12, "curve": "stepped" },
+					{ "time": 1.5, "angle": -11.12, "curve": "stepped" },
+					{ "time": 2, "angle": -11.12 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.5, "x": 0, "y": 29.52 },
+					{ "time": 1, "x": 0, "y": 0 },
+					{ "time": 1.5, "x": 0, "y": -30.48 },
+					{ "time": 2, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 },
+					{ "time": 1, "x": 0.95, "y": 1 },
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			},
+			"hat": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.5, "angle": 4.17 },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.5, "x": -0.33, "y": 9.03 },
+					{ "time": 2, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 },
+					{ "time": 1, "x": 1, "y": 0.95 },
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			},
+			"shoot_bottom": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"shoot_top": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1, "angle": -19.87 },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 1, "x": -4.82, "y": 13.7 },
+					{ "time": 2, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			},
+			"head": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1, "angle": 5.87 },
+					{ "time": 2, "angle": 0 }
+				],
+				"scale": [
+					{ "time": 1, "x": 1, "y": 1 }
+				]
+			}
+		}
+	},
+	"shoot": {
+		"slots": {
+			"Petals_shoot": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.5, "color": "ffffff00" },
+					{ "time": 0.6667, "color": "fffffffe", "curve": "stepped" },
+					{ "time": 1.6667, "color": "fffffffe" },
+					{ "time": 2, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "PERSO PRINCIPAL_petals_shot" },
+					{ "time": 0.5, "name": "PERSO PRINCIPAL_petals_shot" },
+					{ "time": 0.6667, "name": "PERSO PRINCIPAL_petals_shot" },
+					{ "time": 1.6667, "name": "PERSO PRINCIPAL_petals_shot" },
+					{ "time": 2, "name": "PERSO PRINCIPAL_petals_shot" }
+				]
+			},
+			"Tail": {
+				"attachment": [
+					{ "time": 0, "name": "PERSO PRINCIPAL_tail_down" },
+					{ "time": 0.5, "name": "PERSO PRINCIPAL_tail_up" },
+					{ "time": 1, "name": "PERSO PRINCIPAL_tail_down" },
+					{ "time": 1.5, "name": "PERSO PRINCIPAL_tail_up" },
+					{ "time": 2, "name": "PERSO PRINCIPAL_tail_down" }
+				]
+			}
+		},
+		"bones": {
+			"body": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1, "angle": -14.16 },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 1, "x": 0, "y": 29.52 },
+					{ "time": 2, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			},
+			"hat": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.5, "angle": 4.17 },
+					{ "time": 1, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.5, "x": -0.33, "y": 9.03 },
+					{ "time": 1, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1, "x": 1, "y": 1 }
+				]
+			},
+			"shoot_bottom": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"shoot_top": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.5, "angle": -9.53 },
+					{ "time": 1, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.5, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1, "x": 1, "y": 1 }
+				]
+			},
+			"head": {
+				"rotate": [
+					{ "time": 0, "angle": 352.69 },
+					{ "time": 0.5, "angle": 6.35 },
+					{ "time": 1, "angle": 5.16 },
+					{ "time": 1.5, "angle": 6.35 },
+					{ "time": 2, "angle": 352.69 }
+				]
+			}
+		}
+	}
+}
+}

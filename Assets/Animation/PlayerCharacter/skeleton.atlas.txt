@@ -1,0 +1,68 @@
+
+skeleton.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+PERSO PRINCIPAL_hat
+  rotate: false
+  xy: 2, 439
+  size: 843, 543
+  orig: 843, 543
+  offset: 0, 0
+  index: -1
+PERSO PRINCIPAL_head
+  rotate: false
+  xy: 2, 2
+  size: 431, 435
+  orig: 431, 435
+  offset: 0, 0
+  index: -1
+PERSO PRINCIPAL_petals_shot
+  rotate: false
+  xy: 435, 16
+  size: 124, 129
+  orig: 124, 129
+  offset: 0, 0
+  index: -1
+PERSO PRINCIPAL_shoot_top
+  rotate: false
+  xy: 435, 147
+  size: 522, 290
+  orig: 522, 290
+  offset: 0, 0
+  index: -1
+PERSO PRINCIPAL_tail_down
+  rotate: false
+  xy: 847, 689
+  size: 124, 106
+  orig: 124, 106
+  offset: 0, 0
+  index: -1
+PERSO PRINCIPAL_tail_up
+  rotate: false
+  xy: 847, 797
+  size: 146, 185
+  orig: 146, 185
+  offset: 0, 0
+  index: -1
+
+skeleton2.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+PERSO PRINCIPAL_body
+  rotate: false
+  xy: 2, 2
+  size: 526, 495
+  orig: 526, 495
+  offset: 0, 0
+  index: -1
+PERSO PRINCIPAL_shoot_bottom
+  rotate: false
+  xy: 530, 222
+  size: 282, 275
+  orig: 282, 275
+  offset: 0, 0
+  index: -1

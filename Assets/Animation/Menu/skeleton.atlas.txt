@@ -1,0 +1,90 @@
+
+skeleton.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Leaf_bright_1
+  rotate: true
+  xy: 271, 37
+  size: 80, 135
+  orig: 80, 135
+  offset: 0, 0
+  index: -1
+Leaf_bright_2
+  rotate: true
+  xy: 271, 37
+  size: 80, 135
+  orig: 80, 135
+  offset: 0, 0
+  index: -1
+Leaf_bright_3
+  rotate: true
+  xy: 271, 37
+  size: 80, 135
+  orig: 80, 135
+  offset: 0, 0
+  index: -1
+Leaf_dark_1
+  rotate: false
+  xy: 2, 18
+  size: 127, 99
+  orig: 127, 99
+  offset: 0, 0
+  index: -1
+Leaf_dark_2
+  rotate: false
+  xy: 2, 18
+  size: 127, 99
+  orig: 127, 99
+  offset: 0, 0
+  index: -1
+Leaf_dark_3
+  rotate: false
+  xy: 2, 18
+  size: 127, 99
+  orig: 127, 99
+  offset: 0, 0
+  index: -1
+Leaf_light_1
+  rotate: false
+  xy: 408, 2
+  size: 87, 115
+  orig: 87, 115
+  offset: 0, 0
+  index: -1
+Leaf_light_2
+  rotate: false
+  xy: 408, 2
+  size: 87, 115
+  orig: 87, 115
+  offset: 0, 0
+  index: -1
+Leaf_light_3
+  rotate: false
+  xy: 408, 2
+  size: 87, 115
+  orig: 87, 115
+  offset: 0, 0
+  index: -1
+Leaf_mid_1
+  rotate: true
+  xy: 131, 32
+  size: 85, 138
+  orig: 85, 138
+  offset: 0, 0
+  index: -1
+Leaf_mid_2
+  rotate: true
+  xy: 131, 32
+  size: 85, 138
+  orig: 85, 138
+  offset: 0, 0
+  index: -1
+Leaf_mid_3
+  rotate: true
+  xy: 131, 32
+  size: 85, 138
+  orig: 85, 138
+  offset: 0, 0
+  index: -1
