@@ -6,16 +6,9 @@ filter: Linear,Linear
 repeat: none
 Eyes_blue_evil
   rotate: true
-  xy: 791, 361
+  xy: 791, 26
   size: 220, 81
   orig: 220, 81
-  offset: 0, 0
-  index: -1
-Eyes_blue_normal
-  rotate: true
-  xy: 791, 155
-  size: 204, 67
-  orig: 204, 67
   offset: 0, 0
   index: -1
 body_no_arms_no_legs
@@ -32,46 +25,39 @@ dust_cloud
   orig: 787, 999
   offset: 0, 0
   index: -1
-left_arm
+flash/flash_body
   rotate: false
-  xy: 874, 313
-  size: 136, 112
-  orig: 136, 112
+  xy: 791, 404
+  size: 231, 308
+  orig: 231, 308
   offset: 0, 0
   index: -1
-left_foot
+flash/flash_foot_L
   rotate: false
-  xy: 874, 427
+  xy: 791, 248
   size: 147, 154
   orig: 147, 154
   offset: 0, 0
   index: -1
-left_forearm
-  rotate: false
-  xy: 791, 583
-  size: 213, 129
-  orig: 213, 129
-  offset: 0, 0
-  index: -1
-right_arm
-  rotate: false
-  xy: 860, 200
-  size: 124, 111
-  orig: 124, 111
-  offset: 0, 0
-  index: -1
-right_foot
+flash/flash_forearm_L
   rotate: true
-  xy: 791, 2
-  size: 151, 103
-  orig: 151, 103
+  xy: 874, 2
+  size: 88, 126
+  orig: 88, 126
   offset: 0, 0
   index: -1
-right_forearm
+flash/flash_forearm_R
   rotate: false
-  xy: 896, 67
+  xy: 940, 271
   size: 81, 131
   orig: 81, 131
+  offset: 0, 0
+  index: -1
+left_foot
+  rotate: false
+  xy: 874, 92
+  size: 147, 154
+  orig: 147, 154
   offset: 0, 0
   index: -1
 
@@ -80,24 +66,100 @@ size: 1024,1024
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
+Eyes_blue_normal
+  rotate: false
+  xy: 135, 16
+  size: 204, 67
+  orig: 204, 67
+  offset: 0, 0
+  index: -1
 Left_wing_normal
   rotate: false
-  xy: 2, 303
+  xy: 2, 386
   size: 345, 626
   orig: 345, 626
   offset: 0, 0
   index: -1
 Right_wing_normal
   rotate: true
-  xy: 2, 2
+  xy: 2, 85
   size: 299, 566
   orig: 299, 566
   offset: 0, 0
   index: -1
-head
-  rotate: false
-  xy: 349, 405
+flash/flash_arm_L
+  rotate: true
+  xy: 875, 876
+  size: 136, 112
+  orig: 136, 112
+  offset: 0, 0
+  index: -1
+flash/flash_foot_R
+  rotate: true
+  xy: 875, 585
+  size: 151, 103
+  orig: 151, 103
+  offset: 0, 0
+  index: -1
+flash/flash_head
+  rotate: true
+  xy: 349, 573
   size: 439, 524
   orig: 439, 524
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 570, 47
+  size: 439, 524
+  orig: 439, 524
+  offset: 0, 0
+  index: -1
+left_arm
+  rotate: true
+  xy: 875, 738
+  size: 136, 112
+  orig: 136, 112
+  offset: 0, 0
+  index: -1
+left_forearm
+  rotate: false
+  xy: 349, 442
+  size: 213, 129
+  orig: 213, 129
+  offset: 0, 0
+  index: -1
+right_forearm
+  rotate: true
+  xy: 2, 2
+  size: 81, 131
+  orig: 81, 131
+  offset: 0, 0
+  index: -1
+
+distance_enemy3.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+flash/flash_arm_R
+  rotate: false
+  xy: 155, 2
+  size: 124, 111
+  orig: 124, 111
+  offset: 0, 0
+  index: -1
+right_arm
+  rotate: false
+  xy: 281, 2
+  size: 124, 111
+  orig: 124, 111
+  offset: 0, 0
+  index: -1
+right_foot
+  rotate: false
+  xy: 2, 10
+  size: 151, 103
+  orig: 151, 103
   offset: 0, 0
   index: -1

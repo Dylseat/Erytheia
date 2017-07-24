@@ -13,7 +13,6 @@ public class EnemyPatrol : MonoBehaviour
     int currentHealth = 5;
     [SerializeField]
     float timeToDie = 0.8f;
-    private int enemyDamage = 2;
     [SerializeField]
     float velocity = 2.5f;
 
@@ -39,7 +38,6 @@ public class EnemyPatrol : MonoBehaviour
     private float groundRadius = 0.15f;
 
     private bool facingRight = true;
-    public bool stunned = false;
 
     private PlayerCharacter player;
 
@@ -112,12 +110,5 @@ public class EnemyPatrol : MonoBehaviour
         {
             currentHealth--;
         }
-    }
-
-    public void GetStunned()
-    {
-        stunned = true;
-        velocity = 0f;
-        GetComponent<SpriteRenderer>().color = new Color(255f, 0f, 0f);
     }
 }
