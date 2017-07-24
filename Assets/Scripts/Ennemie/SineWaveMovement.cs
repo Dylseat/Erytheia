@@ -11,7 +11,7 @@ public class SineWaveMovement : BaseMovement
     protected override float GetY()
     {
         // try and mess with some of the values here to see what dif results you get...
-        return Mathf.Sin(2 * Mathf.PI * Time.time * frequency) * wavelength;
+        return Mathf.Cos(2 * Mathf.PI * Time.time * frequency) * wavelength;
     }
 
     protected override void Move()
