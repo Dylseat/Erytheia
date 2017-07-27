@@ -31,7 +31,7 @@ public class RoomCam : MonoBehaviour
         {
             Debug.LogError("Cannot find gameobject with tag 'MainCamera'");
             Debug.Break();
-            UnityEditor.EditorApplication.isPlaying = false;
+            //UnityEditor.EditorApplication.isPlaying = false;
         }
 
         player = GameObject.FindGameObjectWithTag("Player");
@@ -40,7 +40,7 @@ public class RoomCam : MonoBehaviour
         {
             Debug.LogError("Cannot find gameobject with tag 'Player'");
             Debug.Break();
-            UnityEditor.EditorApplication.isPlaying = false;
+            //UnityEditor.EditorApplication.isPlaying = false;
         }
     }
 

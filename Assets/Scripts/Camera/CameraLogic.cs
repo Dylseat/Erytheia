@@ -32,7 +32,7 @@ public class CameraLogic : MonoBehaviour
         {
             Debug.LogError("Cannot find gameobject with tag 'Player'");
             Debug.Break();
-            UnityEditor.EditorApplication.isPlaying = false;
+            //UnityEditor.EditorApplication.isPlaying = false;
         }
     }
 
