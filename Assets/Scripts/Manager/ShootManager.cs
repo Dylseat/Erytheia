@@ -34,6 +34,7 @@ public class ShootManager : MonoBehaviour
 
         if (collidingEnemy)
         {
+            Debug.Log(enemyHit);
             if (enemyHit == 0)
             {
                 enemyHit = 1;
@@ -55,6 +56,16 @@ public class ShootManager : MonoBehaviour
         }
 
         if (collision.gameObject.CompareTag("Ground"))
+        {
+            Destroy(gameObject);
+        }
+
+        if(collision.gameObject.CompareTag("Interruptor"))
+        {
+            Destroy(gameObject);
+        }
+
+        if(collision.gameObject.CompareTag("Wall"))
         {
             Destroy(gameObject);
         }

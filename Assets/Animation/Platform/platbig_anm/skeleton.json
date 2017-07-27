@@ -1,0 +1,57 @@
+{
+"skeleton": { "hash": "de6lT6rc0WDDBbxV6P6r1J3yiGg", "spine": "3.6.37", "width": 754, "height": 262, "images": "./Platbig_anim/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "Blob_R", "parent": "root", "x": 155.45, "y": -4.22 },
+	{ "name": "blob_L", "parent": "root", "x": -230.51, "y": -11.27 }
+],
+"slots": [
+	{ "name": "Blob_platBig_R", "bone": "Blob_R", "attachment": "Blob_platBig_R" },
+	{ "name": "blob_platbig_L", "bone": "blob_L", "attachment": "blob_platbig_L" },
+	{ "name": "PlatBig", "bone": "root", "attachment": "PlatBig" }
+],
+"skins": {
+	"default": {
+		"Blob_platBig_R": {
+			"Blob_platBig_R": { "x": -15.53, "y": 4.35, "width": 108, "height": 112 }
+		},
+		"PlatBig": {
+			"PlatBig": { "x": -24, "y": 50.36, "width": 754, "height": 262 }
+		},
+		"blob_platbig_L": {
+			"blob_platbig_L": { "x": 2.99, "y": 36.4, "width": 112, "height": 109 }
+		}
+	}
+},
+"animations": {
+	"PlatBig_Move": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"Blob_R": {
+				"scale": [
+					{ "time": 0, "x": 1.122, "y": 1.122 },
+					{ "time": 0.3333, "x": 1, "y": 1 },
+					{ "time": 0.6667, "x": 1.12, "y": 1.12 }
+				]
+			},
+			"blob_L": {
+				"scale": [
+					{ "time": 0.1333, "x": 1, "y": 1 },
+					{ "time": 0.4333, "x": 1.106, "y": 1.106 },
+					{ "time": 0.6667, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

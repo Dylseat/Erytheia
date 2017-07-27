@@ -1,0 +1,27 @@
+
+skeleton.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Blob_platBig_R
+  rotate: false
+  xy: 758, 263
+  size: 108, 112
+  orig: 108, 112
+  offset: 0, 0
+  index: -1
+PlatBig
+  rotate: false
+  xy: 2, 113
+  size: 754, 262
+  orig: 754, 262
+  offset: 0, 0
+  index: -1
+blob_platbig_L
+  rotate: false
+  xy: 2, 2
+  size: 112, 109
+  orig: 112, 109
+  offset: 0, 0
+  index: -1
