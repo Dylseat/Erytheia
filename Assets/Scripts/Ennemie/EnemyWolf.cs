@@ -1,12 +1,15 @@
-﻿/*
- * TO DO : SWITCH TO RAYCAST BASED VISION 
- *  FIX DIFFERENT LEVEL CHASING  (AN ENEMY HIGHER THAN THE PLAYER RESULTS IN THE ENEMY FLOATING TO HIS TARGET IF HE SEES HIM)
- */
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
+using Spine;
+using Spine.Unity;
 
-public class EnemyPatrol : MonoBehaviour
+public class EnemyWolf : MonoBehaviour
 {
+    /* Animation */
+    [SerializeField]
+    SkeletonAnimation animEnemy;
+
+    /* wolf */
     [SerializeField]
     int maxHealth = 5;
     [SerializeField]
@@ -15,7 +18,11 @@ public class EnemyPatrol : MonoBehaviour
     float timeToDie = 0.8f;
     [SerializeField]
     float velocity = 2.5f;
+    [SerializeField]
+    bool isMoving;
+    Rigidbody2D m_Body;
 
+   /* detection wall */
     [SerializeField]
     Transform sightStart;
     [SerializeField]
@@ -39,18 +46,24 @@ public class EnemyPatrol : MonoBehaviour
 
     private bool facingRight = true;
 
-    private PlayerCharacter player;
-
     void Start()
     {
+        animEnemy = GetComponent<SkeletonAnimation>();
         currentHealth = maxHealth;
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCharacter>();
+        m_Body = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-        GetComponent<Rigidbody2D>().velocity = new Vector3(velocity, 0.0f, 0.0f);
-
+        if(isMoving)
+        {
+            Move();
+        }
+        else
+        {
+            animEnemy.AnimationName = "loup pose base";
+            animEnemy.loop = true;
+        }
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
         if (grounded == false)
         {
@@ -76,7 +89,15 @@ public class EnemyPatrol : MonoBehaviour
         {
             currentHealth = 0;
             Die();
+            animEnemy.AnimationName = "mort";
         }
+    }
+
+    void Move()
+    {
+        m_Body.velocity = new Vector3(velocity, m_Body.velocity.y);
+        animEnemy.AnimationName = "marche";
+        animEnemy.loop = true;
     }
 
     void OnDrawGizmos()
@@ -84,11 +105,6 @@ public class EnemyPatrol : MonoBehaviour
         //Draws a line showing what makes the enemy rotate
         Gizmos.color = Color.magenta;
         Gizmos.DrawLine(sightStart.position, sightEnd.position);
-    }
-
-    public void Damage(int damage)
-    {
-        currentHealth -= damage;
     }
 
     public void Die()
@@ -109,6 +125,7 @@ public class EnemyPatrol : MonoBehaviour
         if (collision.gameObject.tag == "Projectile")
         {
             currentHealth--;
+            animEnemy.AnimationName = "degats";
         }
     }
 }

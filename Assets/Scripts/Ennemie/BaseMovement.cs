@@ -16,7 +16,7 @@ public abstract class BaseMovement : MonoBehaviour
     protected virtual void Move()
     {
         velocity.y = GetY();
-        cachedTransform.localPosition += (velocity + direction) * Time.deltaTime * speed;
+        cachedTransform.localPosition += -(velocity + direction) * Time.deltaTime * speed;
     }
 
     protected virtual void Start()
