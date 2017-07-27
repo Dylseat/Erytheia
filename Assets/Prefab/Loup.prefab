@@ -83,8 +83,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1718290658464982}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 37.14, y: -10.45, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 44.30575, y: -83.541695, z: 0}
   m_LocalScale: {x: 0.36654085, y: 0.39220598, z: 0.35591137}
   m_Children:
   - {fileID: 4782219990377508}
@@ -244,8 +244,8 @@ MonoBehaviour:
   maxHealth: 5
   currentHealth: 5
   timeToDie: 0.2
-  velocity: 2.5
-  isMoving: 0
+  velocity: 3
+  isMoving: 1
   sightStart: {fileID: 4834611813324538}
   sightEnd: {fileID: 4798282845278216}
   detecting:

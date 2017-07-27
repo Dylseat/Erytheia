@@ -14,10 +14,12 @@ public class EnemyFly : MonoBehaviour
     int maxHealth = 3;
     int currentHealth;
     float timeToDie = 2f;
+    Collider2D col;
 
     // Use this for initialization
     void Start()
     {
+        col = GetComponent<Collider2D>();
         animEnemy = GetComponent<SkeletonAnimation>();
         currentHealth = maxHealth;
     }
@@ -41,6 +43,7 @@ public class EnemyFly : MonoBehaviour
     public void Die()
     {
         Destroy(this.gameObject, timeToDie);
+        col.enabled = false;
     }
 
     void OnCollisionEnter2D(Collision2D collision)

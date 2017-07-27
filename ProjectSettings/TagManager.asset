@@ -12,6 +12,7 @@ TagManager:
   - Enemy
   - Trigg
   - Boss
+  - Interruptor
   layers:
   - Default
   - TransparentFX
@@ -29,9 +30,9 @@ TagManager:
   - Enemy
   - Trigg
   - Boss
-  - 
-  - 
-  - 
+  - EnemyFly
+  - Projectile
+  - ShootBoss
   - 
   - 
   - 

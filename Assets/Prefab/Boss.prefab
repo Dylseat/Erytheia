@@ -230,14 +230,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51322692b6afefb42939c7231ddbf4d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animBoss: {fileID: 0}
   maxHealth: 5
   currentHealth: 5
   timeToDie: 0.8
   velocity: 2.5
-  sightStart: {fileID: 4613581975443552}
-  sightEnd: {fileID: 4198928212277838}
-  detecting:
-    serializedVersion: 2
-    m_Bits: 4096
-  collidingWall: 0
-  maxDistDetection: 0
+  pos: []

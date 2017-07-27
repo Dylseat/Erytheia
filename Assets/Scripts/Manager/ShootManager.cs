@@ -40,11 +40,14 @@ public class ShootManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
 
-    void OnTriggerEnter2D(Collider2D Collider)
-    {
-        if (Collider.gameObject.tag == "Boss")
+        if (collision.gameObject.CompareTag("Interruptor"))
+        {
+            Destroy(gameObject);
+        }
+
+
+        if (collision.gameObject.CompareTag("Wall"))
         {
             Destroy(gameObject);
         }

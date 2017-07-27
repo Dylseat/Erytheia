@@ -158,6 +158,16 @@ public class PlayerCharacter : MonoBehaviour
             PlayerDead();
             currentHealth = 0;
         }
+
+        if (collision.gameObject.tag == "EnemyFly")
+        {
+            currentHealth --;
+        }
+
+        if (collision.gameObject.tag == "ShootBoss")
+        {
+            currentHealth --;
+        }
     }
 
     public void Damage(int damage)
@@ -167,8 +177,7 @@ public class PlayerCharacter : MonoBehaviour
 
     void PlayerDead()
     {
-        m_Body.velocity = new Vector2(m_Body.velocity.x, jumpForce);
-
+        m_Body.velocity = new Vector2(m_Body.velocity.x, 4);
         StartCoroutine(Restart());
     }
 

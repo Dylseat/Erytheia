@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 58092606600099144}
   - component: {fileID: 50854842651690080}
   - component: {fileID: 114089524655431400}
-  m_Layer: 16
+  m_Layer: 17
   m_Name: leftBullet
   m_TagString: Projectile
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 4468745927400004}
   - component: {fileID: 198797901073367218}
   - component: {fileID: 199887048914266900}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,10 +122,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: -10, y: 0}
   delay: 5
-  whatIsEnemy:
-    serializedVersion: 2
-    m_Bits: 8192
-  collidingEnemy: 0
 --- !u!198 &198797901073367218
 ParticleSystem:
   m_ObjectHideFlags: 1
