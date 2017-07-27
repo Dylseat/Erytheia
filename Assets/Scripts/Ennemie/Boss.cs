@@ -106,6 +106,7 @@ public class Boss : MonoBehaviour
                 animBoss.loop = true;
                 yield return null;
             }
+            yield return new WaitForSeconds(2f);
         }
 
     }

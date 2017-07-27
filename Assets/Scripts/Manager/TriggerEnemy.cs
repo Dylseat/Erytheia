@@ -8,10 +8,14 @@ public class TriggerEnemy : MonoBehaviour
     GameObject enemy;
     [SerializeField]
     Transform enemyPos;
+
+    Collider2D m_col;
+
     // Use this for initialization
     void Start()
     {
-
+        m_col = GetComponent<Collider2D>();
+        
     }
 
     void OnTriggerEnter2D(Collider2D Collider)
@@ -25,5 +29,6 @@ public class TriggerEnemy : MonoBehaviour
     void EnemySpawner()
     {
         Instantiate(enemy, enemyPos.position, enemyPos.rotation);
+        m_col.enabled = false;
     }
 }
