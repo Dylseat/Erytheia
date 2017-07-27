@@ -145,7 +145,20 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: cbbd166d26b62bc46b3710fb1e7e38bf, type: 2}
+  - {fileID: 2100000, guid: ab2339cd1c3a20e409f5555972309251, type: 2}
+  - {fileID: 2100000, guid: 9d1f4939da4363844a249f3bc3a4b612, type: 2}
+  - {fileID: 2100000, guid: ab2339cd1c3a20e409f5555972309251, type: 2}
+  - {fileID: 2100000, guid: 9d1f4939da4363844a249f3bc3a4b612, type: 2}
+  - {fileID: 2100000, guid: ab2339cd1c3a20e409f5555972309251, type: 2}
+  - {fileID: 2100000, guid: 9d1f4939da4363844a249f3bc3a4b612, type: 2}
+  - {fileID: 2100000, guid: ab2339cd1c3a20e409f5555972309251, type: 2}
+  - {fileID: 2100000, guid: 9d1f4939da4363844a249f3bc3a4b612, type: 2}
+  - {fileID: 2100000, guid: ab2339cd1c3a20e409f5555972309251, type: 2}
+  - {fileID: 2100000, guid: 9d1f4939da4363844a249f3bc3a4b612, type: 2}
+  - {fileID: 2100000, guid: ab2339cd1c3a20e409f5555972309251, type: 2}
+  - {fileID: 2100000, guid: 9d1f4939da4363844a249f3bc3a4b612, type: 2}
+  - {fileID: 2100000, guid: ab2339cd1c3a20e409f5555972309251, type: 2}
+  - {fileID: 2100000, guid: 9d1f4939da4363844a249f3bc3a4b612, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -227,10 +240,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b88687b3b4ce36548aa1f6ba00b8e7f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animEnemy: {fileID: 0}
   maxHealth: 5
   currentHealth: 5
   timeToDie: 0.2
   velocity: 2.5
+  isMoving: 0
   sightStart: {fileID: 4834611813324538}
   sightEnd: {fileID: 4798282845278216}
   detecting:
