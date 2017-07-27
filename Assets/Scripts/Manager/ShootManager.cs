@@ -41,4 +41,12 @@ public class ShootManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    void OnTriggerEnter2D(Collider2D Collider)
+    {
+        if (Collider.gameObject.tag == "Boss")
+        {
+            Destroy(gameObject);
+        }
+    }
 }
