@@ -36,7 +36,7 @@ public class PlayerCharacter : MonoBehaviour
 
     /* Audio */
     [SerializeField]
-    AudioClip soundJump;
+    AudioClip soundShoot;
     AudioSource m_Sound;
 
     /* Shoot */
@@ -54,6 +54,7 @@ public class PlayerCharacter : MonoBehaviour
     {
         animPlayer = GetComponent<SkeletonAnimation>();
         m_Body = GetComponent<Rigidbody2D>();
+        m_Sound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -86,10 +87,21 @@ public class PlayerCharacter : MonoBehaviour
 
     public void move(float horizontal)
     {
-        if (groundCheck)
-        {
-            m_Body.velocity = new Vector3(speed * horizontal, m_Body.velocity.y);
+        m_Body.velocity = new Vector3(speed * horizontal, m_Body.velocity.y);
 
+        if (Mathf.Abs(horizontal) <= 0.5)
+        {
+            animPlayer.loop = true;
+            animPlayer.AnimationName = "Idle";
+        }
+        else
+        {
+            animPlayer.loop = true;
+            animPlayer.AnimationName = "movement";
+        }
+
+        if (groundCheck)
+        {     
             if (horizontal > 0 && !IsTurnedRight)
             {
                 Flip();
@@ -118,15 +130,17 @@ public class PlayerCharacter : MonoBehaviour
             {
                 Instantiate(rightBullet, FirePosition.position, Quaternion.identity);
                 ammoLeft -= 1;
+                m_Sound.PlayOneShot(soundShoot);
             }
 
             if (!IsTurnedRight)
             {
                 Instantiate(leftBullet, FirePosition.position, Quaternion.identity);
                 ammoLeft -= 1;
+                m_Sound.PlayOneShot(soundShoot);
             }
         }
-        for(int i = 0; i < 3; i++)
+        for(int i = 0; i <= 3; i++)
         {
             ammoLeft++;
         }

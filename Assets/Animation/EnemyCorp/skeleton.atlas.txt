@@ -4,241 +4,394 @@ size: 1024,1024
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-dead eye
+blanc line art L leg jambe bas pied
   rotate: true
-  xy: 415, 47
+  xy: 886, 521
+  size: 96, 61
+  orig: 96, 61
+  offset: 0, 0
+  index: -1
+blanc line art angry 1
+  rotate: true
+  xy: 91, 16
+  size: 41, 78
+  orig: 41, 78
+  offset: 0, 0
+  index: -1
+blanc line art bras 1 copy
+  rotate: false
+  xy: 886, 283
+  size: 131, 213
+  orig: 131, 213
+  offset: 0, 0
+  index: -1
+blanc line art feuillage 2
+  rotate: false
+  xy: 2, 632
+  size: 390, 390
+  orig: 390, 390
+  offset: 0, 0
+  index: -1
+blanc line art head wolf copy 2
+  rotate: false
+  xy: 394, 367
+  size: 266, 248
+  orig: 266, 248
+  offset: 0, 0
+  index: -1
+blanc line art leg marche 2 copy jambe bas pied 2
+  rotate: false
+  xy: 311, 23
+  size: 71, 215
+  orig: 71, 215
+  offset: 0, 0
+  index: -1
+blanc line art tail wolf feuille
+  rotate: true
+  xy: 2, 59
+  size: 179, 307
+  orig: 179, 307
+  offset: 0, 0
+  index: -1
+blanc line art wlf ventre
+  rotate: false
+  xy: 394, 617
+  size: 208, 405
+  orig: 208, 405
+  offset: 0, 0
+  index: -1
+blanc torse wolf
+  rotate: false
+  xy: 662, 353
+  size: 222, 262
+  orig: 222, 262
+  offset: 0, 0
+  index: -1
+blsnc line art oreille angry 2
+  rotate: true
+  xy: 814, 619
+  size: 94, 135
+  orig: 94, 135
+  offset: 0, 0
+  index: -1
+dead eye
+  rotate: false
+  xy: 251, 3
   size: 57, 54
   orig: 57, 54
   offset: 0, 0
   index: -1
 line art L leg jambe bas pied
   rotate: false
-  xy: 926, 460
+  xy: 882, 5
   size: 96, 61
   orig: 96, 61
   offset: 0, 0
   index: -1
 line art L leg jambe bas pied 2
-  rotate: false
-  xy: 926, 793
+  rotate: true
+  xy: 658, 16
   size: 71, 222
   orig: 71, 222
   offset: 0, 0
   index: -1
-line art L leg jambe haut
-  rotate: false
-  xy: 393, 361
-  size: 158, 201
-  orig: 158, 201
-  offset: 0, 0
-  index: -1
-line art R leg jambe
-  rotate: true
-  xy: 2, 13
-  size: 203, 245
-  orig: 203, 245
-  offset: 0, 0
-  index: -1
-line art R leg jambe bas pied
-  rotate: false
-  xy: 485, 126
-  size: 91, 57
-  orig: 91, 57
-  offset: 0, 0
-  index: -1
-line art R leg jambe bas pied 2
-  rotate: true
-  xy: 662, 677
-  size: 114, 176
-  orig: 114, 176
-  offset: 0, 0
-  index: -1
 line art angry 1
   rotate: true
-  xy: 338, 4
+  xy: 171, 16
   size: 41, 78
   orig: 41, 78
   offset: 0, 0
   index: -1
-line art angry hand 2
-  rotate: false
-  xy: 686, 330
-  size: 121, 84
-  orig: 121, 84
-  offset: 0, 0
-  index: -1
-line art avant bras 1
-  rotate: true
-  xy: 806, 596
-  size: 59, 161
-  orig: 59, 161
-  offset: 0, 0
-  index: -1
-line art avant bras 2
-  rotate: false
-  xy: 686, 416
-  size: 101, 152
-  orig: 101, 152
-  offset: 0, 0
-  index: -1
 line art bras 1 copy
   rotate: false
-  xy: 553, 349
+  xy: 886, 68
   size: 131, 213
   orig: 131, 213
   offset: 0, 0
   index: -1
-line art bras 2
-  rotate: true
-  xy: 840, 657
-  size: 134, 163
-  orig: 134, 163
-  offset: 0, 0
-  index: -1
-line art cou wolf
-  rotate: false
-  xy: 927, 357
-  size: 94, 101
-  orig: 94, 101
-  offset: 0, 0
-  index: -1
-line art eye angry
-  rotate: false
-  xy: 583, 190
-  size: 57, 54
-  orig: 57, 54
-  offset: 0, 0
-  index: -1
-line art eye open
-  rotate: false
-  xy: 969, 601
-  size: 52, 54
-  orig: 52, 54
-  offset: 0, 0
-  index: -1
-line art feuillage 1
-  rotate: true
-  xy: 806, 523
-  size: 71, 148
-  orig: 71, 148
-  offset: 0, 0
-  index: -1
 line art feuillage 2
   rotate: false
-  xy: 2, 625
+  xy: 2, 240
   size: 390, 390
   orig: 390, 390
   offset: 0, 0
   index: -1
-line art hand 1
-  rotate: false
-  xy: 415, 106
-  size: 68, 135
-  orig: 68, 135
-  offset: 0, 0
-  index: -1
-line art hand 2
-  rotate: true
-  xy: 809, 331
-  size: 94, 116
-  orig: 94, 116
-  offset: 0, 0
-  index: -1
 line art hand angry 1
   rotate: false
-  xy: 429, 246
+  xy: 384, 2
   size: 104, 113
   orig: 104, 113
   offset: 0, 0
   index: -1
 line art head wolf copy 2
   rotate: false
-  xy: 394, 767
+  xy: 394, 117
   size: 266, 248
   orig: 266, 248
   offset: 0, 0
   index: -1
-line art leg marche 1 copy jambe bas pied
-  rotate: false
-  xy: 485, 185
-  size: 96, 59
-  orig: 96, 59
-  offset: 0, 0
-  index: -1
 line art leg marche 1 copy jambe bas pied 2
   rotate: true
-  xy: 638, 570
+  xy: 490, 10
   size: 105, 166
   orig: 105, 166
   offset: 0, 0
   index: -1
-line art leg marche 1 copy jambe haut
-  rotate: true
-  xy: 394, 564
-  size: 201, 242
-  orig: 201, 242
-  offset: 0, 0
-  index: -1
-line art leg marche 2 copy jambe bas pied
-  rotate: true
-  xy: 535, 246
-  size: 101, 111
-  orig: 101, 111
-  offset: 0, 0
-  index: -1
 line art leg marche 2 copy jambe bas pied 2
-  rotate: true
-  xy: 212, 243
+  rotate: false
+  xy: 951, 498
   size: 71, 215
   orig: 71, 215
   offset: 0, 0
   index: -1
-line art leg marche 2 copy jambe haut
-  rotate: false
-  xy: 249, 47
-  size: 164, 194
-  orig: 164, 194
-  offset: 0, 0
-  index: -1
 line art oreille 1
   rotate: true
-  xy: 249, 2
+  xy: 2, 14
   size: 43, 87
   orig: 43, 87
   offset: 0, 0
   index: -1
-line art oreille 2
-  rotate: true
-  xy: 648, 252
-  size: 76, 130
-  orig: 76, 130
-  offset: 0, 0
-  index: -1
-line art oreille angry 2
-  rotate: true
-  xy: 789, 427
-  size: 94, 135
-  orig: 94, 135
-  offset: 0, 0
-  index: -1
 line art tail wolf feuille
   rotate: false
-  xy: 212, 316
+  xy: 814, 715
   size: 179, 307
   orig: 179, 307
   offset: 0, 0
   index: -1
 line art wlf ventre
   rotate: false
-  xy: 2, 218
+  xy: 604, 617
   size: 208, 405
   orig: 208, 405
   offset: 0, 0
   index: -1
 torse wolf
-  rotate: true
-  xy: 662, 793
+  rotate: false
+  xy: 662, 89
   size: 222, 262
   orig: 222, 262
+  offset: 0, 0
+  index: -1
+
+skeleton2.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+blanc line art R leg jambe bas pied
+  rotate: true
+  xy: 325, 687
+  size: 91, 57
+  orig: 91, 57
+  offset: 0, 0
+  index: -1
+blanc line art R leg jambe bas pied 2
+  rotate: false
+  xy: 878, 846
+  size: 114, 176
+  orig: 114, 176
+  offset: 0, 0
+  index: -1
+blanc line art avant bras 1
+  rotate: false
+  xy: 2, 2
+  size: 59, 161
+  orig: 59, 161
+  offset: 0, 0
+  index: -1
+blanc line art avant bras 2
+  rotate: true
+  xy: 588, 725
+  size: 101, 152
+  orig: 101, 152
+  offset: 0, 0
+  index: -1
+blanc line art bras 2
+  rotate: false
+  xy: 2, 165
+  size: 134, 163
+  orig: 134, 163
+  offset: 0, 0
+  index: -1
+blanc line art cou wolf
+  rotate: false
+  xy: 235, 468
+  size: 94, 101
+  orig: 94, 101
+  offset: 0, 0
+  index: -1
+blanc line art feuillage 1
+  rotate: false
+  xy: 162, 383
+  size: 71, 148
+  orig: 71, 148
+  offset: 0, 0
+  index: -1
+blanc line art hand 1
+  rotate: false
+  xy: 941, 709
+  size: 68, 135
+  orig: 68, 135
+  offset: 0, 0
+  index: -1
+blanc line art hand 2
+  rotate: true
+  xy: 845, 613
+  size: 94, 116
+  orig: 94, 116
+  offset: 0, 0
+  index: -1
+blanc line art leg marche 1 copy jambe haut
+  rotate: false
+  xy: 2, 533
+  size: 201, 242
+  orig: 201, 242
+  offset: 0, 0
+  index: -1
+blanc line art leg marche 2 copy jambe haut
+  rotate: false
+  xy: 410, 828
+  size: 164, 194
+  orig: 164, 194
+  offset: 0, 0
+  index: -1
+line art L leg jambe haut
+  rotate: false
+  xy: 2, 330
+  size: 158, 201
+  orig: 158, 201
+  offset: 0, 0
+  index: -1
+line art R leg jambe
+  rotate: false
+  xy: 2, 777
+  size: 203, 245
+  orig: 203, 245
+  offset: 0, 0
+  index: -1
+line art R leg jambe bas pied
+  rotate: true
+  xy: 308, 591
+  size: 91, 57
+  orig: 91, 57
+  offset: 0, 0
+  index: -1
+line art R leg jambe bas pied 2
+  rotate: true
+  xy: 410, 712
+  size: 114, 176
+  orig: 114, 176
+  offset: 0, 0
+  index: -1
+line art angry hand 2
+  rotate: false
+  xy: 720, 619
+  size: 121, 84
+  orig: 121, 84
+  offset: 0, 0
+  index: -1
+line art avant bras 1
+  rotate: false
+  xy: 63, 2
+  size: 59, 161
+  orig: 59, 161
+  offset: 0, 0
+  index: -1
+line art avant bras 2
+  rotate: false
+  xy: 742, 705
+  size: 101, 152
+  orig: 101, 152
+  offset: 0, 0
+  index: -1
+line art bras 2
+  rotate: false
+  xy: 742, 859
+  size: 134, 163
+  orig: 134, 163
+  offset: 0, 0
+  index: -1
+line art cou wolf
+  rotate: false
+  xy: 235, 365
+  size: 94, 101
+  orig: 94, 101
+  offset: 0, 0
+  index: -1
+line art eye angry
+  rotate: true
+  xy: 331, 532
+  size: 57, 54
+  orig: 57, 54
+  offset: 0, 0
+  index: -1
+line art eye open
+  rotate: false
+  xy: 331, 476
+  size: 52, 54
+  orig: 52, 54
+  offset: 0, 0
+  index: -1
+line art feuillage 1
+  rotate: false
+  xy: 138, 180
+  size: 71, 148
+  orig: 71, 148
+  offset: 0, 0
+  index: -1
+line art hand 1
+  rotate: false
+  xy: 124, 28
+  size: 68, 135
+  orig: 68, 135
+  offset: 0, 0
+  index: -1
+line art hand 2
+  rotate: true
+  xy: 207, 684
+  size: 94, 116
+  orig: 94, 116
+  offset: 0, 0
+  index: -1
+line art leg marche 1 copy jambe bas pied
+  rotate: true
+  xy: 963, 611
+  size: 96, 59
+  orig: 96, 59
+  offset: 0, 0
+  index: -1
+line art leg marche 1 copy jambe haut
+  rotate: false
+  xy: 207, 780
+  size: 201, 242
+  orig: 201, 242
+  offset: 0, 0
+  index: -1
+line art leg marche 2 copy jambe bas pied
+  rotate: false
+  xy: 205, 571
+  size: 101, 111
+  orig: 101, 111
+  offset: 0, 0
+  index: -1
+line art leg marche 2 copy jambe haut
+  rotate: false
+  xy: 576, 828
+  size: 164, 194
+  orig: 164, 194
+  offset: 0, 0
+  index: -1
+line art oreille 2
+  rotate: true
+  xy: 588, 647
+  size: 76, 130
+  orig: 76, 130
+  offset: 0, 0
+  index: -1
+line art oreille angry 2
+  rotate: false
+  xy: 845, 709
+  size: 94, 135
+  orig: 94, 135
   offset: 0, 0
   index: -1

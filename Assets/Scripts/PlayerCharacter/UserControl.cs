@@ -24,7 +24,7 @@ public class UserControl : MonoBehaviour
     /// </summary>
     void manageController()
     {
-        if (Mathf.Abs(InputManager.Devices[0].LeftStickX) > 0.1)
+        if (InputManager.Devices[0].LeftStickX)
         {
             pChar.move(InputManager.Devices[0].LeftStickX);
         }

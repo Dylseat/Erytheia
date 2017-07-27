@@ -1,104 +1,243 @@
 
 skeleton.png
-size: 1024,512
+size: 1024,1024
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-Crystal
+Courbes 1 copie
   rotate: false
-  xy: 567, 264
-  size: 106, 115
-  orig: 106, 115
+  xy: 682, 706
+  size: 332, 310
+  orig: 332, 310
+  offset: 0, 0
+  index: -1
+Courbes 1 copie 2
+  rotate: false
+  xy: 682, 220
+  size: 161, 172
+  orig: 161, 172
+  offset: 0, 0
+  index: -1
+Courbes 1 copie 3
+  rotate: true
+  xy: 2, 2
+  size: 215, 107
+  orig: 215, 107
   offset: 0, 0
   index: -1
 Flower
   rotate: false
-  xy: 2, 176
+  xy: 682, 394
   size: 332, 310
   orig: 332, 310
   offset: 0, 0
   index: -1
 Head
   rotate: false
-  xy: 2, 2
+  xy: 845, 220
   size: 161, 172
   orig: 161, 172
   offset: 0, 0
   index: -1
-L_leg
-  rotate: true
-  xy: 804, 388
-  size: 98, 123
-  orig: 98, 123
-  offset: 0, 0
-  index: -1
 P_1
-  rotate: false
-  xy: 336, 379
+  rotate: true
+  xy: 111, 2
   size: 215, 107
   orig: 215, 107
   offset: 0, 0
   index: -1
+light_beam
+  rotate: true
+  xy: 447, 13
+  size: 204, 568
+  orig: 204, 568
+  offset: 0, 0
+  index: -1
+lighty_thing
+  rotate: false
+  xy: 2, 219
+  size: 678, 797
+  orig: 678, 797
+  offset: 0, 0
+  index: -1
+spoof_small
+  rotate: true
+  xy: 220, 5
+  size: 212, 225
+  orig: 212, 225
+  offset: 0, 0
+  index: -1
+
+skeleton2.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Calque 4
+  rotate: false
+  xy: 2, 289
+  size: 249, 313
+  orig: 249, 313
+  offset: 0, 0
+  index: -1
+Courbes 1
+  rotate: false
+  xy: 510, 611
+  size: 106, 115
+  orig: 106, 115
+  offset: 0, 0
+  index: -1
+Courbes 1 copie 10
+  rotate: false
+  xy: 915, 842
+  size: 86, 75
+  orig: 86, 75
+  offset: 0, 0
+  index: -1
+Courbes 1 copie 11
+  rotate: false
+  xy: 634, 744
+  size: 82, 83
+  orig: 82, 83
+  offset: 0, 0
+  index: -1
+Courbes 1 copie 12
+  rotate: true
+  xy: 518, 836
+  size: 69, 145
+  orig: 69, 145
+  offset: 0, 0
+  index: -1
+Courbes 1 copie 13
+  rotate: true
+  xy: 646, 922
+  size: 98, 123
+  orig: 98, 123
+  offset: 0, 0
+  index: -1
+Courbes 1 copie 4
+  rotate: false
+  xy: 253, 489
+  size: 126, 113
+  orig: 126, 113
+  offset: 0, 0
+  index: -1
+Courbes 1 copie 5
+  rotate: true
+  xy: 771, 919
+  size: 101, 119
+  orig: 101, 119
+  offset: 0, 0
+  index: -1
+Courbes 1 copie 6
+  rotate: false
+  xy: 253, 270
+  size: 101, 91
+  orig: 101, 91
+  offset: 0, 0
+  index: -1
+Courbes 1 copie 7
+  rotate: true
+  xy: 410, 735
+  size: 123, 105
+  orig: 123, 105
+  offset: 0, 0
+  index: -1
+Courbes 1 copie 8
+  rotate: false
+  xy: 110, 163
+  size: 98, 124
+  orig: 98, 124
+  offset: 0, 0
+  index: -1
+Courbes 1 copie 9
+  rotate: false
+  xy: 410, 860
+  size: 106, 160
+  orig: 106, 160
+  offset: 0, 0
+  index: -1
+Crystal
+  rotate: true
+  xy: 517, 728
+  size: 106, 115
+  orig: 106, 115
+  offset: 0, 0
+  index: -1
+L_leg
+  rotate: false
+  xy: 410, 610
+  size: 98, 123
+  orig: 98, 123
+  offset: 0, 0
+  index: -1
 P_2_L
   rotate: false
-  xy: 336, 264
+  xy: 518, 907
   size: 126, 113
   orig: 126, 113
   offset: 0, 0
   index: -1
 P_2_M
-  rotate: false
-  xy: 464, 258
+  rotate: true
+  xy: 892, 919
   size: 101, 119
   orig: 101, 119
   offset: 0, 0
   index: -1
 P_2_R
-  rotate: true
-  xy: 929, 385
+  rotate: false
+  xy: 665, 829
   size: 101, 91
   orig: 101, 91
   offset: 0, 0
   index: -1
 P_3_L1
   rotate: true
-  xy: 336, 176
+  xy: 718, 741
   size: 86, 75
   orig: 86, 75
   offset: 0, 0
   index: -1
 P_3_L2
   rotate: false
-  xy: 165, 14
+  xy: 2, 127
   size: 106, 160
   orig: 106, 160
   offset: 0, 0
   index: -1
 P_3_M
-  rotate: true
-  xy: 678, 388
+  rotate: false
+  xy: 253, 363
   size: 98, 124
   orig: 98, 124
   offset: 0, 0
   index: -1
 P_3_R1
   rotate: false
-  xy: 344, 91
+  xy: 795, 763
   size: 82, 83
   orig: 82, 83
   offset: 0, 0
   index: -1
 P_3_R2
-  rotate: false
-  xy: 553, 381
+  rotate: true
+  xy: 2, 2
   size: 123, 105
   orig: 123, 105
   offset: 0, 0
   index: -1
 R_leg
-  rotate: false
-  xy: 273, 29
+  rotate: true
+  xy: 768, 848
   size: 69, 145
   orig: 69, 145
+  offset: 0, 0
+  index: -1
+spoof
+  rotate: false
+  xy: 2, 604
+  size: 406, 416
+  orig: 406, 416
   offset: 0, 0
   index: -1
