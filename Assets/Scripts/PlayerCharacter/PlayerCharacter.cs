@@ -47,11 +47,16 @@ public class PlayerCharacter : MonoBehaviour
     [SerializeField]
     Transform FirePosition;
 
+    public LevelManager LevelManager; // KillPlayer
+    public float timerToRespawn = 3f; // After his Death
+
     int ammoLeft = 3;
 
     // Use this for initialization
     void Start()
     {
+        LevelManager = FindObjectOfType<LevelManager>();
+
         animPlayer = GetComponent<SkeletonAnimation>();
         m_Body = GetComponent<Rigidbody2D>();
         m_Sound = GetComponent<AudioSource>();
@@ -153,20 +158,31 @@ public class PlayerCharacter : MonoBehaviour
             currentHealth = currentHealth - 2;
         }
 
-        if (collision.gameObject.tag == "DeadZone")
+        /*if (collision.gameObject.tag == "DeadZone")
         {
             PlayerDead();
             currentHealth = 0;
-        }
+        }*/
 
         if (collision.gameObject.tag == "EnemyFly")
         {
+            //PlayerDead();
             currentHealth --;
         }
 
         if (collision.gameObject.tag == "ShootBoss")
         {
+            //PlayerDead();
             currentHealth --;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if(collision.tag == "DeadZone")
+        {
+            currentHealth = 0;
         }
     }
 
@@ -177,13 +193,25 @@ public class PlayerCharacter : MonoBehaviour
 
     void PlayerDead()
     {
-        m_Body.velocity = new Vector2(m_Body.velocity.x, 4);
-        StartCoroutine(Restart());
+        //m_Body.velocity = new Vector2(m_Body.velocity.x, 4);
+        //StartCoroutine(Restart());
+        StartCoroutine(waitSeconds());
     }
 
-    IEnumerator Restart()
+    /*IEnumerator Restart()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(10f);
         SceneManager.LoadScene("level1");
+    }*/
+
+    IEnumerator waitSeconds()
+    {
+        m_Body.velocity = new Vector2(m_Body.velocity.x, 4);
+        yield return new WaitForSeconds(timerToRespawn);
+        Debug.Log("BOOM! We just waited " + timerToRespawn + " Whole SECONDS MANNN !");
+        currentHealth = maxHealth;
+        Debug.Log("CurrentHealth : " + currentHealth);
+        LevelManager.RespawnPlayer();
+        StopAllCoroutines();
     }
 }

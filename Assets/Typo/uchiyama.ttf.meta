@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: e0037df023f23f84f93a760b1e2a9000
+timeCreated: 1502234186
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Uchiyama
+  fontNames:
+  - Uchiyama
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

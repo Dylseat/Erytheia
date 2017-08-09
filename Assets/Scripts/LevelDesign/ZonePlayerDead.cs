@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DrawGizmos : MonoBehaviour
+public class ZonePlayerDead : MonoBehaviour
 {
-
-    void OnDrawGizmos()
+        void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Vector3 tempOffset = new Vector3(gameObject.GetComponent<BoxCollider2D>().offset.x, gameObject.GetComponent<BoxCollider2D>().offset.y, 0);
