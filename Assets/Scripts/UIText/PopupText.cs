@@ -55,7 +55,7 @@ public class PopupText : MonoBehaviour
     public void UpdateText(int numberSwitchValue)
     {
         cristalsNumber += numberSwitchValue;
-        displayText.text = cristalsNumber + " / 5";
+        displayText.text = cristalsNumber + " / 1";
         step = 0;
         timeCount = 0;
 

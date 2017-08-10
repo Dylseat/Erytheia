@@ -62,9 +62,18 @@ public class EnemyWolf : MonoBehaviour
         }
         else
         {
-            animEnemy.AnimationName = "loup pose base";
-            animEnemy.loop = true;
+            if(animDamage > 0)
+            {
+                animEnemy.AnimationName = "degats";
+                animDamage--;
+            }
+            else
+            {
+                animEnemy.AnimationName = "loup pose base";
+                animEnemy.loop = true;
+            }
         }
+
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
         if (grounded == false)
         {
