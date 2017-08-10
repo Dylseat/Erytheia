@@ -13,9 +13,7 @@ public class FallingPlatform : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player")
-        {
-            Debug.Log("Detected");
-            
+        {   
             if(hisFalling == false)
             {
                 platform.GetComponent<SpriteRenderer>().color = ChangeColor;

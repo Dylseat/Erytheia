@@ -12,6 +12,7 @@ public class PlayerCharacter : MonoBehaviour
     /* Animation*/
     [SerializeField]
     SkeletonAnimation animPlayer;
+    int animDamage;
 
     /* Player */
     [SerializeField]
@@ -47,7 +48,7 @@ public class PlayerCharacter : MonoBehaviour
     [SerializeField]
     Transform FirePosition;
 
-    int ammoLeft = 3;
+    int ammoLeft = 0;
 
     // Use this for initialization
     void Start()
@@ -96,8 +97,16 @@ public class PlayerCharacter : MonoBehaviour
         }
         else
         {
-            animPlayer.loop = true;
-            animPlayer.AnimationName = "movement";
+            if (animDamage > 0)
+            {
+                animPlayer.AnimationName = "damage";
+                animDamage--;
+            }
+            else
+            {
+                animPlayer.AnimationName = "movement";
+                animPlayer.loop = true;
+            }
         }
 
         if (groundCheck)
@@ -129,18 +138,18 @@ public class PlayerCharacter : MonoBehaviour
             if (IsTurnedRight)
             {
                 Instantiate(rightBullet, FirePosition.position, Quaternion.identity);
-                ammoLeft -= 1;
+                ammoLeft --;
                 m_Sound.PlayOneShot(soundShoot);
             }
 
             if (!IsTurnedRight)
             {
                 Instantiate(leftBullet, FirePosition.position, Quaternion.identity);
-                ammoLeft -= 1;
+                ammoLeft --;
                 m_Sound.PlayOneShot(soundShoot);
             }
         }
-        for(int i = 0; i <= 3; i++)
+        else
         {
             ammoLeft++;
         }
@@ -151,6 +160,7 @@ public class PlayerCharacter : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             currentHealth = currentHealth - 2;
+            animDamage = 50;
         }
 
         if (collision.gameObject.tag == "DeadZone")
@@ -162,6 +172,7 @@ public class PlayerCharacter : MonoBehaviour
         if (collision.gameObject.tag == "EnemyFly")
         {
             currentHealth --;
+            animDamage = 50;
         }
 
         if (collision.gameObject.tag == "ShootBoss")
@@ -170,14 +181,8 @@ public class PlayerCharacter : MonoBehaviour
         }
     }
 
-    public void Damage(int damage)
-    {
-        currentHealth -= damage;
-    }
-
     void PlayerDead()
     {
-        m_Body.velocity = new Vector2(m_Body.velocity.x, 4);
         StartCoroutine(Restart());
     }
 

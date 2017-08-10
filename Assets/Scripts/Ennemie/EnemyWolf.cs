@@ -8,6 +8,7 @@ public class EnemyWolf : MonoBehaviour
     /* Animation */
     [SerializeField]
     SkeletonAnimation animEnemy;
+    int animDamage = 0;
 
     /* wolf */
     [SerializeField]
@@ -90,14 +91,24 @@ public class EnemyWolf : MonoBehaviour
             currentHealth = 0;
             Die();
             animEnemy.AnimationName = "mort";
+            velocity = 0;
+            animEnemy.loop = false;
         }
     }
 
     void Move()
     {
         m_Body.velocity = new Vector3(velocity, m_Body.velocity.y);
-        animEnemy.AnimationName = "marche";
-        animEnemy.loop = true;
+        if(animDamage > 0)
+        {
+            animEnemy.AnimationName = "degats";
+            animDamage--;
+        }
+        else
+        {
+            animEnemy.AnimationName = "marche";
+            animEnemy.loop = true;
+        }
     }
 
     void OnDrawGizmos()
@@ -125,7 +136,7 @@ public class EnemyWolf : MonoBehaviour
         if (collision.gameObject.tag == "Projectile")
         {
             currentHealth--;
-            animEnemy.AnimationName = "degats";
+            animDamage = 100;
         }
     }
 }

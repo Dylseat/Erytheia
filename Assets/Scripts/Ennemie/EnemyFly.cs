@@ -9,7 +9,8 @@ public class EnemyFly : MonoBehaviour
     /* Animation */
     [SerializeField]
     SkeletonAnimation animEnemy;
-    
+    int animDamage = 0;
+
     /* fly */
     int maxHealth = 3;
     int currentHealth;
@@ -38,6 +39,17 @@ public class EnemyFly : MonoBehaviour
             Die();
             animEnemy.AnimationName = "Flight_death";
         }
+
+        if (animDamage > 0)
+        {
+            animEnemy.AnimationName = "Taking_damage";
+            animDamage--;
+        }
+        else
+        {
+            animEnemy.AnimationName = "Flight_attack";
+            animEnemy.loop = true;
+        }
     }
 
     public void Die()
@@ -51,8 +63,7 @@ public class EnemyFly : MonoBehaviour
         if (collision.gameObject.tag == "Projectile")
         {
             currentHealth--;
-            animEnemy.AnimationName = "Taking_damage";
-            animEnemy.loop = false;
+            animDamage = 100;
         }
     }
 }
