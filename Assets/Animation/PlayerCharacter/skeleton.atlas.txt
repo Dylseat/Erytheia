@@ -6,11 +6,59 @@ filter: Linear,Linear
 repeat: none
 PERSO PRINCIPAL_hat
   rotate: false
-  xy: 2, 439
+  xy: 2, 449
   size: 843, 543
   orig: 843, 543
   offset: 0, 0
   index: -1
+PERSO PRINCIPAL_petals_shot
+  rotate: true
+  xy: 847, 444
+  size: 124, 129
+  orig: 124, 129
+  offset: 0, 0
+  index: -1
+PERSO PRINCIPAL_tail_up
+  rotate: false
+  xy: 847, 807
+  size: 146, 185
+  orig: 146, 185
+  offset: 0, 0
+  index: -1
+flash/Arme_bottom_dmg
+  rotate: true
+  xy: 744, 31
+  size: 411, 258
+  orig: 411, 258
+  offset: 0, 0
+  index: -1
+flash/petal_bottom_dmg
+  rotate: true
+  xy: 847, 680
+  size: 125, 147
+  orig: 125, 147
+  offset: 0, 0
+  index: -1
+flash/tail_up_dmg
+  rotate: true
+  xy: 847, 570
+  size: 108, 166
+  orig: 108, 166
+  offset: 0, 0
+  index: -1
+flash/tete_dmg
+  rotate: true
+  xy: 2, 2
+  size: 445, 740
+  orig: 445, 740
+  offset: 0, 0
+  index: -1
+
+skeleton2.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
 PERSO PRINCIPAL_head
   rotate: false
   xy: 2, 2
@@ -18,51 +66,65 @@ PERSO PRINCIPAL_head
   orig: 431, 435
   offset: 0, 0
   index: -1
-PERSO PRINCIPAL_petals_shot
-  rotate: false
-  xy: 435, 16
-  size: 124, 129
-  orig: 124, 129
-  offset: 0, 0
-  index: -1
-PERSO PRINCIPAL_shoot_top
-  rotate: false
-  xy: 435, 147
-  size: 522, 290
-  orig: 522, 290
-  offset: 0, 0
-  index: -1
 PERSO PRINCIPAL_tail_down
   rotate: false
-  xy: 847, 689
+  xy: 802, 905
   size: 124, 106
   orig: 124, 106
   offset: 0, 0
   index: -1
-PERSO PRINCIPAL_tail_up
+flash/Arme_top_dmg
   rotate: false
-  xy: 847, 797
-  size: 146, 185
-  orig: 146, 185
+  xy: 435, 92
+  size: 486, 345
+  orig: 486, 345
+  offset: 0, 0
+  index: -1
+flash/hat_dmg
+  rotate: false
+  xy: 2, 439
+  size: 798, 572
+  orig: 798, 572
+  offset: 0, 0
+  index: -1
+flash/tail_down_dmg
+  rotate: false
+  xy: 802, 793
+  size: 103, 110
+  orig: 103, 110
   offset: 0, 0
   index: -1
 
-skeleton2.png
-size: 1024,512
+skeleton3.png
+size: 1024,1024
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
 PERSO PRINCIPAL_body
   rotate: false
-  xy: 2, 2
+  xy: 2, 468
   size: 526, 495
   orig: 526, 495
   offset: 0, 0
   index: -1
 PERSO PRINCIPAL_shoot_bottom
   rotate: false
-  xy: 530, 222
+  xy: 454, 164
   size: 282, 275
   orig: 282, 275
+  offset: 0, 0
+  index: -1
+PERSO PRINCIPAL_shoot_top
+  rotate: true
+  xy: 530, 441
+  size: 522, 290
+  orig: 522, 290
+  offset: 0, 0
+  index: -1
+flash/Body_dmg
+  rotate: false
+  xy: 2, 2
+  size: 450, 464
+  orig: 450, 464
   offset: 0, 0
   index: -1

@@ -9,9 +9,7 @@ public class Boss : MonoBehaviour
     SkeletonAnimation animBoss;
 
     /* Boss */
-    [SerializeField]
-    int maxHealth = 400;
-    [SerializeField]
+    int maxHealth = 200;
     int currentHealth;
     [SerializeField]
     float timeToDie = 0.8f;
@@ -132,7 +130,7 @@ public class Boss : MonoBehaviour
     {
         if (collision.gameObject.tag == "Projectile")
         {
-            currentHealth--;
+            currentHealth = currentHealth - 2;
             animBoss.AnimationName = "Damage";
         }
     }
