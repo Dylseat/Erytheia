@@ -54,8 +54,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1284244175567104}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.9, y: -8.68, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 250.86, y: -91.86616, z: 0}
   m_LocalScale: {x: 0.31125697, y: 0.31125697, z: 0.31125697}
   m_Children:
   - {fileID: 4187716284003138}
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platform: {fileID: 1284244175567104}
   warningFallSound: {fileID: 8300000, guid: 1d85b2e1d6b05ed408cccb57f0bdabfb, type: 3}
-  ChangeColor: {r: 0.9862069, g: 1, b: 0, a: 1}
+  ChangeColor: {r: 0.7106491, g: 0.7205882, b: 0, a: 1}
 --- !u!212 &212788381261668516
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -297,7 +297,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c9bffcf138964b34c863b62ba534d622, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9843137, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

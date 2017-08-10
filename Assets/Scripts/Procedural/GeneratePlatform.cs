@@ -6,7 +6,7 @@ public class GeneratePlatform : MonoBehaviour
 {
 
 
-    public GameObject platform;
+    //public GameObject platform;
     public Transform generationPoint;
     public ObjectPooler objectPool;
 
@@ -23,7 +23,7 @@ public class GeneratePlatform : MonoBehaviour
 
     void Start()
     {
-        platformWidth = platform.GetComponent<BoxCollider2D>().size.x;
+        //platformWidth = platform.GetComponent<BoxCollider2D>().size.x;
     }
 
     void Update()
@@ -32,7 +32,6 @@ public class GeneratePlatform : MonoBehaviour
         // if true create some new platforms
         if(transform.position.x < generationPoint.position.x)
         {
-
             float distanceApartH = Random.Range(distanceApartMinH, distanceApartMaxH);
             float distanceApartV = Random.Range(distanceApartMinV, distanceApartMaxV);
 

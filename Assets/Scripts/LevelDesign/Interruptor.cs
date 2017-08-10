@@ -28,8 +28,7 @@ public class Interruptor : MonoBehaviour
             isOn = true;
 
             // Number interruptor
-            //UItextInfos.numberSwitch += numberSwitchValue;
-            PopupText.cristalsNumber += numberSwitchValue;
+            GameObject.FindGameObjectWithTag("TextInfos").GetComponent<PopupText>().UpdateText(numberSwitchValue);
 
             // Visual feedback
             gameObject.GetComponent<SpriteRenderer>().color = ChangeColor;

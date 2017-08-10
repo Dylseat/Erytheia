@@ -13,6 +13,7 @@ TagManager:
   - Trigg
   - Boss
   - Interruptor
+  - TextInfos
   layers:
   - Default
   - TransparentFX
@@ -49,4 +50,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Platform
+    uniqueID: 2976284889
+    locked: 0
+  - name: Others
+    uniqueID: 2069101331
     locked: 0

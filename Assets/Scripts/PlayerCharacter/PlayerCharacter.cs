@@ -48,7 +48,9 @@ public class PlayerCharacter : MonoBehaviour
     Transform FirePosition;
 
     public LevelManager LevelManager; // KillPlayer
-    public float timerToRespawn = 3f; // After his Death
+    private float timerToRespawn = 1f; // After his Death
+
+    private bool animationDeath = false;
 
     int ammoLeft = 3;
 
@@ -70,10 +72,14 @@ public class PlayerCharacter : MonoBehaviour
             currentHealth = maxHealth;
         }
 
-        if (currentHealth <= 0)
+        if (currentHealth <= 0 && !animationDeath)
         {
             currentHealth = 0;
             PlayerDead();
+        }
+        else if(animationDeath)
+        {
+            //m_Body.velocity = new Vector2(m_Body.velocity.x, 4);
         }
     }
 
@@ -193,6 +199,7 @@ public class PlayerCharacter : MonoBehaviour
 
     void PlayerDead()
     {
+        animationDeath = true;
         //m_Body.velocity = new Vector2(m_Body.velocity.x, 4);
         //StartCoroutine(Restart());
         StartCoroutine(waitSeconds());
@@ -206,12 +213,12 @@ public class PlayerCharacter : MonoBehaviour
 
     IEnumerator waitSeconds()
     {
-        m_Body.velocity = new Vector2(m_Body.velocity.x, 4);
         yield return new WaitForSeconds(timerToRespawn);
         Debug.Log("BOOM! We just waited " + timerToRespawn + " Whole SECONDS MANNN !");
+        LevelManager.RespawnPlayer();
         currentHealth = maxHealth;
         Debug.Log("CurrentHealth : " + currentHealth);
-        LevelManager.RespawnPlayer();
-        StopAllCoroutines();
+        //StopAllCoroutines();
+        animationDeath = false;
     }
 }

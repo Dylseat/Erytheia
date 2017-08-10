@@ -30,36 +30,35 @@ public class PopupText : MonoBehaviour
         // set the starting scale/transform to whatever scale the gameobject has gamestart
         _transform = this.transform;
 
+        enabled = false;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        displayText.text = cristalsNumber + " / 5";
-        if(cristalsNumber == 1)
-        {
-            // increment the step
+           // increment the step
             step += scaleSpeed * Time.deltaTime;
             objScale = aCurve.Evaluate(step);
             _transform.localScale = new Vector2(objScale, objScale);
 
-            if(step >= 1)
-            {
-                //set the step to 0 and start over
-                step = 0;
-            }
-
             if(timeCount < delayTime)
             {
                 timeCount += Time.deltaTime;
-                //return;
             }
             else
             {
-                step = 1;
+                enabled = false;
             }
-            
-        }
-        
+    }
+
+    public void UpdateText(int numberSwitchValue)
+    {
+        cristalsNumber += numberSwitchValue;
+        displayText.text = cristalsNumber + " / 5";
+        step = 0;
+        timeCount = 0;
+
+        enabled = true;
     }
 }
