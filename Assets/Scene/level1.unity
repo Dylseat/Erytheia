@@ -10058,7 +10058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToDie: 0.8
-  velocity: 2.5
+  velocity: 1
   bossShoot: {fileID: 1773751190818340, guid: 5cf4763450d8d134395e32c36cae3bbe, type: 2}
   positionCanon: {fileID: 769746056}
   positionCanon1: {fileID: 281167826}
@@ -86195,7 +86195,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1795472866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -41.4, y: -6.3, z: 0}
+  m_LocalPosition: {x: 457.4, y: -4.2, z: 0}
   m_LocalScale: {x: 0.209099, y: 0.19991323, z: 2.1685677}
   m_Children:
   - {fileID: 519058644}
@@ -86214,7 +86214,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.061
+  m_Volume: 0.45
   m_Pitch: 1
   Loop: 0
   Mute: 0
