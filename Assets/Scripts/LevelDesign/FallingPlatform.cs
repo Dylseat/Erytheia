@@ -8,7 +8,6 @@ public class FallingPlatform : MonoBehaviour
     public AudioClip warningFallSound;
     public Color ChangeColor;
 
-    private float timerToFall = 0f;
     private float delayTime = 200;
     private bool hisFalling = false;
 

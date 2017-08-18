@@ -9,7 +9,7 @@ public class Boss : MonoBehaviour
     SkeletonAnimation animBoss;
 
     /* Boss */
-    int maxHealth = 200;
+    int maxHealth = 50;
     int currentHealth;
     [SerializeField]
     float timeToDie = 0.8f;

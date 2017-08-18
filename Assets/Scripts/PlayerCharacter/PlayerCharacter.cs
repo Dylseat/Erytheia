@@ -174,11 +174,10 @@ public class PlayerCharacter : MonoBehaviour
             animDamage = 50;
         }
 
-        /*if (collision.gameObject.tag == "DeadZone")
+        if (collision.gameObject.tag == "DeadZone")
         {
-            PlayerDead();
             currentHealth = 0;
-        }*/
+        }
 
         if (collision.gameObject.tag == "EnemyFly")
         {
@@ -189,17 +188,22 @@ public class PlayerCharacter : MonoBehaviour
         if (collision.gameObject.tag == "ShootBoss")
         {
             currentHealth --;
-            animDamage = 50;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(collision.gameObject.tag == "ShootBoss")
+        {
+            animDamage = 50;
+            currentHealth--;
+        }
 
-        if(collision.tag == "DeadZone")
+        if(collision.gameObject.tag == "DeadZone")
         {
             currentHealth = 0;
         }
+
     }
 
     public void Damage(int damage)
@@ -210,16 +214,8 @@ public class PlayerCharacter : MonoBehaviour
     void PlayerDead()
     {
         animationDeath = true;
-        //m_Body.velocity = new Vector2(m_Body.velocity.x, 4);
-        //StartCoroutine(Restart());
         StartCoroutine(waitSeconds());
     }
-
-    /*IEnumerator Restart()
-    {
-        yield return new WaitForSeconds(10f);
-        SceneManager.LoadScene("level1");
-    }*/
 
     IEnumerator waitSeconds()
     {
@@ -228,7 +224,6 @@ public class PlayerCharacter : MonoBehaviour
         LevelManager.RespawnPlayer();
         currentHealth = maxHealth;
         Debug.Log("CurrentHealth : " + currentHealth);
-        //StopAllCoroutines();
         animationDeath = false;
     }
 }

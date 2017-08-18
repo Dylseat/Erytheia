@@ -14,6 +14,8 @@ TagManager:
   - Boss
   - Interruptor
   - TextInfos
+  - EnemyFly
+  - ShootBoss
   layers:
   - Default
   - TransparentFX
@@ -51,9 +53,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Platform
+  - name: Grounds
     uniqueID: 2976284889
     locked: 0
-  - name: Others
+  - name: Platforms
     uniqueID: 2069101331
+    locked: 0
+  - name: Player+Enemies
+    uniqueID: 3221580041
+    locked: 0
+  - name: Others
+    uniqueID: 4039612221
     locked: 0

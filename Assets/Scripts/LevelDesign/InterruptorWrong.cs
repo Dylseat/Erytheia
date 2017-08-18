@@ -10,7 +10,7 @@ public class InterruptorWrong : MonoBehaviour
     public Wall door;
     public Wall door2;
     private bool isOn = false;
-    private int numberSwitchValue = 1;
+    //private int numberSwitchValue = 1;
 
 
     private void OnTriggerEnter2D(Collider2D collision)
