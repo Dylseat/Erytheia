@@ -8,6 +8,7 @@ public class EnemyWolf : MonoBehaviour
     /* Animation */
     [SerializeField]
     SkeletonAnimation animEnemy;
+    int animDamage = 0;
 
     /* wolf */
     [SerializeField]
@@ -22,7 +23,12 @@ public class EnemyWolf : MonoBehaviour
     bool isMoving;
     Rigidbody2D m_Body;
 
-   /* detection wall */
+    /* Audio */
+    [SerializeField]
+    AudioClip soundDeath;
+    AudioSource m_Sound;
+
+    /* detection wall */
     [SerializeField]
     Transform sightStart;
     [SerializeField]
@@ -51,6 +57,7 @@ public class EnemyWolf : MonoBehaviour
         animEnemy = GetComponent<SkeletonAnimation>();
         currentHealth = maxHealth;
         m_Body = GetComponent<Rigidbody2D>();
+        m_Sound = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -61,9 +68,18 @@ public class EnemyWolf : MonoBehaviour
         }
         else
         {
-            animEnemy.AnimationName = "loup pose base";
-            animEnemy.loop = true;
+            if(animDamage > 0)
+            {
+                animEnemy.AnimationName = "degats";
+                animDamage--;
+            }
+            else
+            {
+                animEnemy.AnimationName = "loup pose base";
+                animEnemy.loop = true;
+            }
         }
+
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
         if (grounded == false)
         {
@@ -88,16 +104,27 @@ public class EnemyWolf : MonoBehaviour
         if (currentHealth <= 0)
         {
             currentHealth = 0;
+            m_Sound.PlayOneShot(soundDeath);
             Die();
             animEnemy.AnimationName = "mort";
+            velocity = 0;
+            animEnemy.loop = false;
         }
     }
 
     void Move()
     {
         m_Body.velocity = new Vector3(velocity, m_Body.velocity.y);
-        animEnemy.AnimationName = "marche";
-        animEnemy.loop = true;
+        if(animDamage > 0)
+        {
+            animEnemy.AnimationName = "degats";
+            animDamage--;
+        }
+        else
+        {
+            animEnemy.AnimationName = "marche";
+            animEnemy.loop = true;
+        }
     }
 
     void OnDrawGizmos()
@@ -125,7 +152,7 @@ public class EnemyWolf : MonoBehaviour
         if (collision.gameObject.tag == "Projectile")
         {
             currentHealth--;
-            animEnemy.AnimationName = "degats";
+            animDamage = 100;
         }
     }
 }

@@ -1,49 +1,126 @@
 
 skeleton.png
-size: 1024,1024
+size: 2048,2048
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-PERSO PRINCIPAL_hat
+Layer 2
   rotate: false
-  xy: 2, 439
+  xy: 765, 1014
+  size: 740, 1026
+  orig: 740, 1026
+  offset: 0, 0
+  index: -1
+Layer 3
+  rotate: false
+  xy: 2, 996
+  size: 761, 1044
+  orig: 761, 1044
+  offset: 0, 0
+  index: -1
+PERSO PRINCIPAL_body
+  rotate: false
+  xy: 1507, 1545
+  size: 526, 495
+  orig: 526, 495
+  offset: 0, 0
+  index: -1
+PERSO PRINCIPAL_hat
+  rotate: true
+  xy: 2, 151
   size: 843, 543
   orig: 843, 543
   offset: 0, 0
   index: -1
 PERSO PRINCIPAL_head
-  rotate: false
-  xy: 2, 2
+  rotate: true
+  xy: 1573, 49
   size: 431, 435
   orig: 431, 435
   offset: 0, 0
   index: -1
 PERSO PRINCIPAL_petals_shot
   rotate: false
-  xy: 435, 16
+  xy: 316, 20
   size: 124, 129
   orig: 124, 129
   offset: 0, 0
   index: -1
+PERSO PRINCIPAL_shoot_bottom
+  rotate: false
+  xy: 1121, 737
+  size: 282, 275
+  orig: 282, 275
+  offset: 0, 0
+  index: -1
 PERSO PRINCIPAL_shoot_top
   rotate: false
-  xy: 435, 147
+  xy: 1507, 1253
   size: 522, 290
   orig: 522, 290
   offset: 0, 0
   index: -1
 PERSO PRINCIPAL_tail_down
-  rotate: false
-  xy: 847, 689
+  rotate: true
+  xy: 442, 25
   size: 124, 106
   orig: 124, 106
   offset: 0, 0
   index: -1
 PERSO PRINCIPAL_tail_up
-  rotate: false
-  xy: 847, 797
+  rotate: true
+  xy: 129, 3
   size: 146, 185
   orig: 146, 185
+  offset: 0, 0
+  index: -1
+Projet M_Chapeau Entier_Level 1
+  rotate: false
+  xy: 1405, 482
+  size: 595, 422
+  orig: 595, 422
+  offset: 0, 0
+  index: -1
+flash/Arme_top_dmg
+  rotate: false
+  xy: 1507, 906
+  size: 486, 345
+  orig: 486, 345
+  offset: 0, 0
+  index: -1
+flash/Body_dmg
+  rotate: false
+  xy: 1121, 16
+  size: 450, 464
+  orig: 450, 464
+  offset: 0, 0
+  index: -1
+flash/hat_dmg
+  rotate: true
+  xy: 547, 196
+  size: 798, 572
+  orig: 798, 572
+  offset: 0, 0
+  index: -1
+flash/petal_bottom_dmg
+  rotate: false
+  xy: 2, 2
+  size: 125, 147
+  orig: 125, 147
+  offset: 0, 0
+  index: -1
+flash/tail_down_dmg
+  rotate: false
+  xy: 660, 84
+  size: 103, 110
+  orig: 103, 110
+  offset: 0, 0
+  index: -1
+flash/tail_up_dmg
+  rotate: false
+  xy: 550, 28
+  size: 108, 166
+  orig: 108, 166
   offset: 0, 0
   index: -1
 
@@ -52,17 +129,17 @@ size: 1024,512
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-PERSO PRINCIPAL_body
-  rotate: false
-  xy: 2, 2
-  size: 526, 495
-  orig: 526, 495
+flash/Arme_bottom_dmg
+  rotate: true
+  xy: 744, 36
+  size: 411, 258
+  orig: 411, 258
   offset: 0, 0
   index: -1
-PERSO PRINCIPAL_shoot_bottom
-  rotate: false
-  xy: 530, 222
-  size: 282, 275
-  orig: 282, 275
+flash/tete_dmg
+  rotate: true
+  xy: 2, 2
+  size: 445, 740
+  orig: 445, 740
   offset: 0, 0
   index: -1

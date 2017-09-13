@@ -8,10 +8,15 @@ public class Boss : MonoBehaviour
     /* Animation */
     SkeletonAnimation animBoss;
 
+    /* Audio */
+    [SerializeField]
+    AudioClip soundTouch;
+    [SerializeField]
+    AudioClip soundDeath;
+    AudioSource m_Sound;
+
     /* Boss */
-    [SerializeField]
-    int maxHealth = 400;
-    [SerializeField]
+    int maxHealth = 50;
     int currentHealth;
     [SerializeField]
     float timeToDie = 0.8f;
@@ -38,6 +43,7 @@ public class Boss : MonoBehaviour
         m_body = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
         StartCoroutine("boss");
+        m_Sound = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -52,6 +58,7 @@ public class Boss : MonoBehaviour
         if (currentHealth <= 0)
         {
             currentHealth = 0;
+            m_Sound.PlayOneShot(soundDeath);
             animBoss.AnimationName = "death";
             animBoss.loop = false;
             StopCoroutine("boss");
@@ -132,7 +139,8 @@ public class Boss : MonoBehaviour
     {
         if (collision.gameObject.tag == "Projectile")
         {
-            currentHealth--;
+            m_Sound.PlayOneShot(soundTouch);
+            currentHealth = currentHealth - 2;
             animBoss.AnimationName = "Damage";
         }
     }

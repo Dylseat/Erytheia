@@ -12,6 +12,7 @@ public class PlayerCharacter : MonoBehaviour
     /* Animation*/
     [SerializeField]
     SkeletonAnimation animPlayer;
+    int animDamage;
 
     /* Player */
     [SerializeField]
@@ -47,11 +48,19 @@ public class PlayerCharacter : MonoBehaviour
     [SerializeField]
     Transform FirePosition;
 
+    public LevelManager LevelManager; // KillPlayer
+    [SerializeField]
+    float timerToRespawn = 1f; // After his Death
+
+    bool animationDeath = false;
+
     int ammoLeft = 3;
 
     // Use this for initialization
     void Start()
     {
+        LevelManager = FindObjectOfType<LevelManager>();
+
         animPlayer = GetComponent<SkeletonAnimation>();
         m_Body = GetComponent<Rigidbody2D>();
         m_Sound = GetComponent<AudioSource>();
@@ -65,10 +74,15 @@ public class PlayerCharacter : MonoBehaviour
             currentHealth = maxHealth;
         }
 
-        if (currentHealth <= 0)
+        if (currentHealth <= 0 && !animationDeath)
         {
             currentHealth = 0;
             PlayerDead();
+            animPlayer.AnimationName = "death";
+        }
+        else if(animationDeath)
+        {
+            //m_Body.velocity = new Vector2(m_Body.velocity.x, 4);
         }
     }
 
@@ -92,12 +106,20 @@ public class PlayerCharacter : MonoBehaviour
         if (Mathf.Abs(horizontal) <= 0.5)
         {
             animPlayer.loop = true;
-            animPlayer.AnimationName = "Idle";
+            animPlayer.AnimationName = "idle";
         }
         else
         {
-            animPlayer.loop = true;
-            animPlayer.AnimationName = "movement";
+            if(animDamage > 0)
+            {
+                animPlayer.AnimationName = "damage";
+                animDamage--;
+            }
+            else
+            {
+                animPlayer.AnimationName = "move";
+                animPlayer.loop = true;
+            }
         }
 
         if (groundCheck)
@@ -125,24 +147,18 @@ public class PlayerCharacter : MonoBehaviour
     {
         if (ammoLeft > 0)
         {
-            animPlayer.AnimationName = "shoot";
+            animPlayer.AnimationName = "attack";
             if (IsTurnedRight)
             {
                 Instantiate(rightBullet, FirePosition.position, Quaternion.identity);
-                ammoLeft -= 1;
                 m_Sound.PlayOneShot(soundShoot);
             }
 
             if (!IsTurnedRight)
             {
                 Instantiate(leftBullet, FirePosition.position, Quaternion.identity);
-                ammoLeft -= 1;
                 m_Sound.PlayOneShot(soundShoot);
             }
-        }
-        for(int i = 0; i <= 3; i++)
-        {
-            ammoLeft++;
         }
     }
 
@@ -151,16 +167,17 @@ public class PlayerCharacter : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             currentHealth = currentHealth - 2;
+            animDamage = 50;
         }
 
         if (collision.gameObject.tag == "DeadZone")
         {
-            PlayerDead();
             currentHealth = 0;
         }
 
         if (collision.gameObject.tag == "EnemyFly")
         {
+            animDamage = 50;
             currentHealth --;
         }
 
@@ -170,6 +187,21 @@ public class PlayerCharacter : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "ShootBoss")
+        {
+            animDamage = 50;
+            currentHealth--;
+        }
+
+        if(collision.gameObject.tag == "DeadZone")
+        {
+            currentHealth = 0;
+        }
+
+    }
+
     public void Damage(int damage)
     {
         currentHealth -= damage;
@@ -177,13 +209,18 @@ public class PlayerCharacter : MonoBehaviour
 
     void PlayerDead()
     {
-        m_Body.velocity = new Vector2(m_Body.velocity.x, 4);
-        StartCoroutine(Restart());
+        animationDeath = true;
+        StartCoroutine(waitSeconds());
+
     }
 
-    IEnumerator Restart()
+    IEnumerator waitSeconds()
     {
-        yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("level1");
+        yield return new WaitForSeconds(timerToRespawn);
+        Debug.Log("BOOM! We just waited " + timerToRespawn + " Whole SECONDS MANNN !");
+        LevelManager.RespawnPlayer();
+        currentHealth = maxHealth;
+        Debug.Log("CurrentHealth : " + currentHealth);
+        animationDeath = false;
     }
 }

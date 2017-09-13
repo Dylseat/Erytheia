@@ -46,6 +46,10 @@ public class ShootManager : MonoBehaviour
             Destroy(gameObject);
         }
 
+        if(collision.gameObject.CompareTag("EnemyFly"))
+        {
+            Destroy(gameObject);
+        }
 
         if (collision.gameObject.CompareTag("Wall"))
         {
