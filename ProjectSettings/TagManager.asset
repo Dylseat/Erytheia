@@ -16,6 +16,7 @@ TagManager:
   - TextInfos
   - EnemyFly
   - ShootBoss
+  - CrystalCollect
   layers:
   - Default
   - TransparentFX

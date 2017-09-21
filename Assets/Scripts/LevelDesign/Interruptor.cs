@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Interruptor : MonoBehaviour
 {
-    public AudioClip Activate;
-    public Color ChangeColor;
+    [SerializeField] public AudioClip Activate;
+    [SerializeField] public Color ChangeColor;
 
-    public Wall door;
-    public Wall door2;
-    private bool isOn = false;
-    private int numberSwitchValue = 1;
+    [SerializeField] public Wall door;
+    [SerializeField] public Wall door2;
+    [SerializeField] private bool isOn = false;
+    [SerializeField] private int numberSwitchValue = 1;
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -28,15 +28,13 @@ public class Interruptor : MonoBehaviour
             isOn = true;
 
             // Number interruptor
-            GameObject.FindGameObjectWithTag("TextInfos").GetComponent<PopupText>().UpdateText(numberSwitchValue);
+            //GameObject.FindGameObjectWithTag("TextInfos").GetComponent<PopupText>().UpdateText(numberSwitchValue);
 
             // Visual feedback
             gameObject.GetComponent<SpriteRenderer>().color = ChangeColor;
 
             // Audio
             GetComponent<AudioSource>().PlayOneShot(Activate);
-
-            Destroy(this);
         }
     }
 }

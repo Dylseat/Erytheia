@@ -89,7 +89,7 @@ public class PlayerCharacter : MonoBehaviour
         m_Ground = Physics2D.OverlapCircle(groundCheck.position, rayonGround, Ground);
     }
 
-    public void jump(float horizontal)
+    public void jump(/*float horizontal*/)
     {
         if (m_Ground)
         {

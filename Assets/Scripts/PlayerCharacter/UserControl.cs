@@ -24,6 +24,20 @@ public class UserControl : MonoBehaviour
     /// </summary>
     void manageController()
     {
+        // Keyboard
+        if(Mathf.Abs(Input.GetAxis("Horizontal")) > 0.1)
+        {
+            pChar.move(Input.GetAxis("Horizontal"));
+        }
+        if(Input.GetButtonDown("Shoot"))
+        {
+            pChar.shoot();
+        }
+        if(Input.GetButton("Jump"))
+        {
+            pChar.jump();
+        }
+
         if (InputManager.Devices[0].LeftStickX)
         {
             pChar.move(InputManager.Devices[0].LeftStickX);
@@ -31,7 +45,8 @@ public class UserControl : MonoBehaviour
 
         if (InputManager.Devices[0].Action1.WasPressed)
         {
-            pChar.jump(Mathf.Abs(InputManager.Devices[0].LeftStickX));
+            pChar.jump();
+            //Mathf.Abs(InputManager.Devices[0].LeftStickX)
         }
 
         if (InputManager.Devices[0].Action3.WasPressed)
@@ -39,6 +54,7 @@ public class UserControl : MonoBehaviour
             pChar.shoot();
         }
     }
+
     // Update is called once per frame
     void Update()
     {

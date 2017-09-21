@@ -16,6 +16,7 @@ public class PopupText : MonoBehaviour
     public float delayTime = 2f;
 
     public static int cristalsNumber;
+    public int totalCristalNumber;
     public Text displayText;
 
     void Awake()
@@ -55,7 +56,7 @@ public class PopupText : MonoBehaviour
     public void UpdateText(int numberSwitchValue)
     {
         cristalsNumber += numberSwitchValue;
-        displayText.text = cristalsNumber + " / 1";
+        displayText.text = cristalsNumber + " / " + totalCristalNumber;
         step = 0;
         timeCount = 0;
 
